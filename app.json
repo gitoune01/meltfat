@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "meltfat_app",
-    "slug": "meltfat_app",
+    "slug": "meltfat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.devstud.meltfat"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00bbe8d3-876c-4ba2-b930-dadc4f0e2a72"
+      }
+    },
+    "owner": "devstud"
   }
 }
