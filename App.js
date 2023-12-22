@@ -12,6 +12,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
+import ExerciseScreen from './src/Screens/ExerciseScreen';
 
 
 
@@ -86,6 +87,7 @@ export default function App() {
     <NavigationContainer onLayout={onLayoutRootView}>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="tabs" component={TabNavigator} />
+        <Stack.Screen name="exercise" component={ExerciseScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

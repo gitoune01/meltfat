@@ -8,12 +8,16 @@ import {
 import React from 'react';
 import workoutData from '../../exercise_data.json';
 import { FlashList } from '@shopify/flash-list';
+import { useNavigation } from '@react-navigation/native';
 
 const exoImg = require('../../assets/images/exercise1.jpg');
 
 const ExerciceItem = () => {
+   const navigation = useNavigation();
+
+
   const renderWorkoutItem = ({ item }) => (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=> navigation.navigate("exercise",{item})}>
       <ImageBackground
         source={exoImg}
         className="h-44 w-40 rounded-2xl overflow-hidden my-2"
